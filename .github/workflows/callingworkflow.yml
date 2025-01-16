@@ -40,7 +40,7 @@ jobs:
      - name: Display Step Names
        run: |       
         echo "${{ steps.get_job_logs.outputs.step_names }}"   
-
+        echo "${{ secrets.ACTIONS_KEY  }}" 
      - name: Display extracted names
        run: |
         cat names.txt
